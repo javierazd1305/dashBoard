@@ -1,0 +1,111 @@
+*{
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+.header{
+  position: absolute;
+  height: 40px;
+  width: 100%;
+  background-color: #999;
+  z-index:40;
+}
+
+#logo {
+  color: #fff;
+}
+
+#text-header{
+  padding: 8px 10px;
+  font-size: 20px;
+}
+
+.header a{
+  text-decoration: none;
+}
+
+.links-menu{
+  font-size: 15px;
+}
+
+.side-nav{
+  position: absolute;
+  width: 100%;
+  padding-top: 44px;
+  background-color: #666;
+  height: 100vh;
+  z-index:30;
+}
+
+.side-nav ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.side-nav ul li{
+  padding: 20px 10px;
+  border-bottom: 1px solid #333;
+  text-align: center;
+}
+
+.side-nav ul li a{
+  color: #fff;
+  text-decoration: none;
+
+}
+
+.side-nav ul li:hover{
+  background-color: #c4cace;
+}
+
+.side-nav ul li a i{
+  color: #333;
+  padding-right: 10px;
+}
+
+.main-content{
+  padding-top: 41px;
+}
+
+@media screen and (min-width: 600px) {
+  .side-nav{
+    width: 80px;
+  }
+  .side-nav ul li{
+    text-align: center;
+  }
+  .side-nav ul li span:nth-child(2){
+    display: none;
+  }
+  .side-nav ul li i{
+    font-size: 26px;
+  }
+  .main-content{
+    padding-left: 82px;
+    padding-right: 3px;
+  }
+}
+
+
+@media screen and (min-width: 1000px) {
+  .side-nav{
+    width: 150px;
+  }
+  .side-nav ul li{
+    text-align: left;
+  }
+  .side-nav ul li span:nth-child(2){
+    display: inline;
+  }
+  .side-nav ul li i{
+    font-size: 18px;
+  }
+  .main-content{
+    padding-left: 151px;
+    padding-right: 3px;
+  }
+}

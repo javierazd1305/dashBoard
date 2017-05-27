@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>OBSA dashboard</title>
+    <script src="https://use.fontawesome.com/bc473d934e.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="text-header" id="text-header">
+            <a href="#" class="nav-trigger"><span id="logo">OBSA DASHBOARD</span></a>
+        </div>
+    </div>
+
+    <div class="side-nav">
+        <nav>
+            <ul>
+                <li>
+                    <a href="contadors.html">
+                        <span><i class="fa fa-car "></i></span>
+                        <span class="links-menu">Contadores</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span><i class="fa fa-map-marker "></i></span>
+                        <span class="links-menu">Map Sensores</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="telecomData.html">
+                        <span><i class="fa fa-bar-chart "></i></span>
+                        <span class="links-menu">Telecom Data</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="# ">
+                        <span><i class="fa fa-user-circle "></i></span>
+                        <span class="links-menu">Members</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main-content" id="content">
+        Responsive dashboard
+        <script type="text/javascript">
+            function load_home() {
+                document.getElementById("content").innerHTML = '<object type="text/html" data="charts/counterChart.html" style="height: 94vh; width: 100%; padding-rigth:10px;" ></object>';
+            }
+            load_home();
+        </script>
+    </div>
+</body>
+
+</html>
